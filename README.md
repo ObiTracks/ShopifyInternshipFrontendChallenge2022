@@ -2,7 +2,7 @@
 
 *So I submitted the shopify backend challenge, then after I finished I decided to to try the rest of the internship challenges since they were starting to seem fun.
 
-But then one of my friends said they didn't think I could finish another by the midnight deadline (I started at 8pm) and here we are - the second production engineering challenge launched & submitted launched and this third frontend challenge was done in a day. Glad I built all these since it felt like a hackathon.*
+But then a friend said they didn't think I could finish another by the midnight deadline (I started at 8pm) and here we are - the second production engineering challenge launched & submitted launched and this third frontend challenge was done in a day. Glad I built all these since it felt like a hackathon.*
 
 ### Demo Links
 
