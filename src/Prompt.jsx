@@ -8,20 +8,7 @@ class Prompt extends Component {
 
     var inputField = document.getElementById("prompt-input");
     inputField.innerText = this.props.prompt;
-
-    // var event = new Event('change');
-    // inputField.fireEvent("onchange")
-    // inputField.dispatchEvent(event);
-
-    // if ("createEvent" in document) {
-    //   var evt = document.createEvent("HTMLEvents");
-    //   evt.initEvent("change", false, true);
-    //   inputField.dispatchEvent(evt);
-    // }
-    // else
-    // inputField.fireEvent("onchange");
   };
-  // onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}};
 
   render() {
     return (
