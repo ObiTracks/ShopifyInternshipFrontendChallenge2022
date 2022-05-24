@@ -3,26 +3,31 @@ import React, { Component } from "react";
 
 
 class Prompt extends Component {
-  copyPrompt = () => {
-    /* Get the text field */
-    var copyText = this.props.prompt;
+  copyPhrase = () => {
+    navigator.clipboard.writeText(this.props.prompt)
 
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    var inputField = document.getElementById("prompt-input");
+    inputField.innerText = this.props.prompt;
 
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
+    // var event = new Event('change');
+    // inputField.fireEvent("onchange")
+    // inputField.dispatchEvent(event);
 
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
-    return;
-  }
+    // if ("createEvent" in document) {
+    //   var evt = document.createEvent("HTMLEvents");
+    //   evt.initEvent("change", false, true);
+    //   inputField.dispatchEvent(evt);
+    // }
+    // else
+    // inputField.fireEvent("onchange");
+  };
+  // onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}};
+
   render() {
     return (
-      <div className="prompt" onClick="this.copyPrompt" id="{this.props.id}">
+      <div className="prompt" onClick={this.copyPhrase} id={this.props.id}>
         <div className="body1">Prompt</div>
-        <div className="body2">Prompt{this.props.prop}</div>
+        <div className="body2">{this.props.prompt}</div>
         <div className="overlay" />
       </div>
     )

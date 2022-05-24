@@ -1,5 +1,7 @@
-// import { Splide, SplideSlide } from '@splidejs/react-splide';
 import './App.css';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css/skyblue';
+
 import Form from './Form';
 import Response from './Response';
 
@@ -10,22 +12,40 @@ function App() {
         <Form />
         <div className="responses">
           <div className="header2">Responses</div>
-          <Response />
-          <Response />
-          <Response />
-          <Response />
+
+
+          <div style={{ width: "100%"}}>
+
+
+            <Splide options={{
+              type: 'loop',
+              perPage: 3,
+              focus: 'center',
+              gap: '20px'
+            }}
+            aria-label="My Favorite Images"
+            >
+              <SplideSlide >
+                <Response />
+              </SplideSlide>
+              <SplideSlide>
+                <Response />
+              </SplideSlide>
+              <SplideSlide>
+                <Response />
+              </SplideSlide>
+              <SplideSlide>
+                <Response />
+              </SplideSlide>
+            </Splide>
+           
+          </div>
         </div>
       </div>
-      {/* <Splide aria-label="My Favorite Images">
-        <SplideSlide>
-          <img src="image1.jpg" alt="Image 1" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src="image2.jpg" alt="Image 2" />
-        </SplideSlide>
-      </Splide> */}
     </div>
   );
 }
+
+
 
 export default App;
