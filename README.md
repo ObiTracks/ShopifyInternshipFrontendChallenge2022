@@ -1,4 +1,4 @@
-# Obi I. - Shopify Frontend Challenge 2022 - Logistics Company Webapp
+# Obi I. - Shopify Frontend Challenge 2022 - OpenAI GPT3 Webapp
 
 *So I submitted the shopify backend challenge, then after I finished I decided to to try the rest of the internship challenges since they were starting to seem fun.
 
